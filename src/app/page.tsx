@@ -9,8 +9,8 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-800 px-4 pb-12 pt-14 text-white">
         <div className="mx-auto max-w-lg">
-          <div className="mb-1 flex items-center gap-2 text-emerald-200 text-sm font-medium">
-            <ShieldCheck className="h-4 w-4" />
+          <div className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-emerald-100 backdrop-blur-sm">
+            <ShieldCheck className="h-3.5 w-3.5" />
             <span>Trusted by Filipino families</span>
           </div>
           <h1 className="text-3xl font-bold leading-tight tracking-tight">
@@ -57,11 +57,9 @@ export default function HomePage() {
           <Link href="/assess" className="block">
             <Card className="border-emerald-100 transition-shadow hover:shadow-md">
               <CardContent className="flex items-start gap-4 p-4">
-                <div className="rounded-xl bg-emerald-50 p-3">
-                  <Search className="h-6 w-6 text-emerald-600" />
-                </div>
+                <Search className="h-6 w-6 text-emerald-600 mt-0.5 shrink-0" />
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900">Eligibility Engine</h3>
+                  <h3 className="text-base font-semibold text-gray-900">Eligibility Engine</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Answer a few questions and instantly see every government program you qualify for — PhilHealth, DSWD, PCSO, DOH, and more.
                   </p>
@@ -74,11 +72,9 @@ export default function HomePage() {
           <Link href="/apply" className="block">
             <Card className="border-blue-100 transition-shadow hover:shadow-md">
               <CardContent className="flex items-start gap-4 p-4">
-                <div className="rounded-xl bg-blue-50 p-3">
-                  <FileText className="h-6 w-6 text-blue-600" />
-                </div>
+                <FileText className="h-6 w-6 text-blue-600 mt-0.5 shrink-0" />
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900">Application Automation</h3>
+                  <h3 className="text-base font-semibold text-gray-900">Application Automation</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Generate guarantee letters, track documents, and submit applications to multiple agencies — no political connections needed.
                   </p>
@@ -91,11 +87,9 @@ export default function HomePage() {
           <Link href="/crowdfund" className="block">
             <Card className="border-rose-100 transition-shadow hover:shadow-md">
               <CardContent className="flex items-start gap-4 p-4">
-                <div className="rounded-xl bg-rose-50 p-3">
-                  <Heart className="h-6 w-6 text-rose-500" />
-                </div>
+                <Heart className="h-6 w-6 text-rose-500 mt-0.5 shrink-0" />
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900">Verified Crowdfunding</h3>
+                  <h3 className="text-base font-semibold text-gray-900">Verified Crowdfunding</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Crowdfund the gap that government programs don&apos;t cover. Bills verified, funds go directly to the hospital.
                   </p>
