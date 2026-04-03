@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Atkinson_Hyperlegible_Next } from "next/font/google";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const atkinson = Atkinson_Hyperlegible_Next({
+  variable: "--font-atkinson",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -20,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-gray-50 font-[family-name:var(--font-geist-sans)]">
+    <html lang="en" className={`${atkinson.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-zinc-50 font-[family-name:var(--font-atkinson)]">
         <main className="flex-1 pb-20">{children}</main>
         <BottomNav />
       </body>
